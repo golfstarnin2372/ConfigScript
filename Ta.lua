@@ -4,13 +4,10 @@ if not game:IsLoaded() then game.Loaded:Wait() end
 _G.Fruit1 = {
     ['BuyFruit'] = true, -- true / false
     ['MainFruit'] = {
-        --[1] = "Dough-Dough",
-        [1] = "Leopard-Leopard",
+        [1] = "Dough-Dough",
+        --[1] = "Leopard-Leopard",
     },
-    ['SelectDevil'] = {
-      [1] = "Buddha-Buddha",
-      [2] = "Dark-Dark",
-    },
+    ['SelectDevil'] = {[1] = "Spirit-Spirit",[2] = "Buddha-Buddha",[3] = "Dark-Dark",},
     ['SinperFruit_mode'] = true,
 }
 --

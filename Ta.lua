@@ -91,6 +91,7 @@ if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
         ['AutoDarkbeard'] = true
     }
     _G.sea_III = {
+        ['AutoPullLever'] = true,
         ['AutoCDK'] = true,
         ['SoulGuitar'] = true,
         ['RainbowHaki'] = true,

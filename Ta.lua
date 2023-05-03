@@ -7,15 +7,17 @@ _G.Fruit1 = {
         [1] = "Dough-Dough",
         --[1] = "Leopard-Leopard",
     },
-    ['SelectDevil'] = {[1] = "Spirit-Spirit",[2] = "Buddha-Buddha",[3] = "Dark-Dark",},
+    ['SelectDevil'] = {
+      [1] = "Spirit-Spirit",
+      [2] = "Buddha-Buddha",
+      [3] = "Dark-Dark", --note เลือกได้ไม่จำกัด unlimit sellect u can add more
+    },
     ['SinperFruit_mode'] = true,
 }
---
-
 
 _G.Race1 = {
     ['RaceSniper'] = true, -- true / false
-    ['Select_Want_Race'] = {"Human","Mink"},  -- del race that u don't want
+    ['Select_Want_Race'] = {"Human","Mink","Skypiea","Fishman"},  -- del race that u don't want
 }
 _G.RamSetting1 = {
     ["Enable"] = false,
@@ -28,19 +30,22 @@ _G.RamSetting1 = {
         [5] = "World",
         [6] = "Beli",
         [7] = "Bounty/Honor",
-        [7] = "Fragment",
-        [8] = "Mirror",
-        [9] = "Valkyrie",
-        [10] = "CDK",
-        [11] = "Tushita",
-        [12] = "Soul Guitar",
-        [13] = "Scythe",
+        [8] = "Fragment",
+        [9] = "PullLever",
+        [10] = "Mirror",
+        [11] = "Valkyrie",
+        [12] = "CDK",
+        [13] = "Tushita",
+        [14] = "Soul Guitar",
+        [15] = "Scythe",
+        [16] = "InventoryFruit",
+    },
+    ["Alias"]  = {
+        --[1] = Choose from above. ["Description"]
     }
 }
-
 _G.Setting1 = {['WhiteScreen'] = true}
 _G.SaveSettingSync = {['Block_All_Hop'] = true}
-
 
 if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
     _G.Setting1['Team'] = "Pirates"  -- Marines / Pirates
@@ -52,9 +57,7 @@ if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
         ['AutoFarm'] = true, -- true / false
         ["GetMaterialGodhuman"] = true,
         ['Mastery_Farm'] = true, -- true / false
-        ['Mastery_Mode'] = "Fruit", --"Fruit", "Gun","Sword"
-        ['FruitMastery_MaxLv'] = true,
-        ['AllSwordMas_MaxLv'] = true,
+        ['Mastery_Mode'] = {"Fruit","Sword"}, 
         ['Farm_Mode'] =  {"Level" ,"Ectoplas","Rengoku","Bone","DripMama","Cocoa"} --  "Level" / "Bone" /  "Level , Bone"  / "Level , NearMob" /  "Ectoplas" / "Rengoku" / "DripMama" / "NearMob"
     }
     _G.tool1 = {
@@ -80,8 +83,7 @@ if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
         ['AutoSea2'] = true, -- true
         ['SecretQuest'] = true,
         ['Open_Saber'] = true,
-        ['Pole_v1'] = true,
-
+        ['Pole_v1'] = true
     }
     _G.sea_II = {
         ['AutoSea3'] = true, -- true
@@ -91,7 +93,7 @@ if type(_G.Setting1) ~= "table" then _G.Setting1 = {} end
         ['AutoDarkbeard'] = true
     }
     _G.sea_III = {
-        --['AutoPullLever'] = false,
+        ['AutoPullLever'] = true,
         ['AutoCDK'] = true,
         ['SoulGuitar'] = true,
         ['RainbowHaki'] = true,
